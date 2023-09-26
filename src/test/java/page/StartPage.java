@@ -2,7 +2,6 @@ package page;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import org.w3c.dom.html.HTMLInputElement;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
@@ -13,7 +12,7 @@ public class StartPage {
     private final SelenideElement creditButton = $$("button").findBy(Condition.text("Купить в кредит"));
 
 
-    public void StartChoosePage() {
+    public void startPage() {
         heading.shouldBe(Condition.visible);
     }
 

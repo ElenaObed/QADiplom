@@ -9,17 +9,18 @@ import java.sql.DriverManager;
 
 public class Sql {
 
-    private static QueryRunner queryRunner = new QueryRunner();
-    private Sql() {
-    }
-
     private static String url = System.getProperty("db.url");
     private static String user = System.getProperty("db.user");
     private static String pass = System.getProperty("db.password");
 
+    private static QueryRunner queryRunner = new QueryRunner();
+
+    private Sql() {
+    }
+
     @SneakyThrows
     private static Connection getCon() {
-        return DriverManager.getConnection(url, user, pass);
+        return DriverManager.getConnection (url, user, pass);
     }
 
     @SneakyThrows

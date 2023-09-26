@@ -40,7 +40,7 @@ public class DataHelper {
         return new CardInfo(DataGenerator.getApprovedCardNumber(), DataGenerator.getEmptyMonthField(), DataGenerator.getShiftedYearFromNow(1), DataGenerator.getValidOwner(), DataGenerator.getValidCVC());
     }
 
-    public static CardInfo getInvalidMonthTwoNumber() {
+    public static CardInfo getInvalidMonthInvalNumber() {
         return new CardInfo(DataGenerator.getApprovedCardNumber(), DataGenerator.getInvalidMonth(), DataGenerator.getShiftedYearFromNow(1), DataGenerator.getValidOwner(), DataGenerator.getValidCVC());
     }
 
@@ -54,9 +54,6 @@ public class DataHelper {
     }
     public static CardInfo getCardWithExpiredYear() {
         return new CardInfo(DataGenerator.getApprovedCardNumber(), DataGenerator.getShiftedMonthFromNow(1), DataGenerator.getShiftedYearFromNow(-1), DataGenerator.getValidOwner(), DataGenerator.getValidCVC());
-    }
-    public static CardInfo getInvalidYearExceedingCardExpirationDate() {
-        return new CardInfo(DataGenerator.getApprovedCardNumber(), DataGenerator.getShiftedMonthFromNow(1), DataGenerator.getShiftedYearFromNow(4), DataGenerator.getValidOwner(), DataGenerator.getValidCVC());
     }
 
     // пользователь
