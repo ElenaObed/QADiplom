@@ -40,7 +40,7 @@ java -jar artifacts/aqa-shop.jar -Dspring.datasource.url=jdbc:mysql://localhost:
 ```
 - для СУБД ***PostgreSQL***:
 ```
-java -jar artifacts/aqa-shop.jar -Dspring.datasource.url=jdbc:mysql://localhost:5432/app
+java -jar artifacts/aqa-shop.jar -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app
 ```
 Сервис запускается на "http://localhost:8080/
 
