@@ -3,8 +3,6 @@ import lombok.Value;
 
 public class DataHelper {
 
-    public static DataGenerator dataGenerator = new DataGenerator();
-
     @Value
     public static class CardInfo {
         String cardNumber;

@@ -12,7 +12,7 @@ public class StartPage {
     private final SelenideElement creditButton = $$("button").findBy(Condition.text("Купить в кредит"));
 
 
-    public void startPage() {
+    public StartPage() {
         heading.shouldBe(Condition.visible);
     }
 

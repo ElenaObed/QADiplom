@@ -37,9 +37,8 @@ public class Sql {
 
     @SneakyThrows
     private static String getStatus(String requestSQL) {
-        String result = null;
         var connection = getCon();
-        result = queryRunner.query(connection, requestSQL, new ScalarHandler<String>());
+        var result = queryRunner.query(connection, requestSQL, new ScalarHandler<String>());
         System.out.println(result);
         return result;
     }
